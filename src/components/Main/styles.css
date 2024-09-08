@@ -1,7 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
 
+.main-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    gap: 38px;
+    margin: 0;
+    padding: 0;
+}
 
-.title{
+.main-title {
     text-align: center;
     font-family: "Fascinate Inline", system-ui;
+    font-size: 25px;
+    gap: 10px;
+    margin-top: 38px;
+}
+
+.main-carrossel {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.main-carrossel>img {
+    width: 185px;
+    display: flex;
+    border-radius: 15px;
+}
+
+.main-button {
+    display: flex;
+    position: fixed;
+    width: 190px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    right: -20px;
+    bottom: 30px;
+
+    font-size: 20px;
+    font-family: "Paprika";
+    background-color: #B1E488;
+    gap: 20px;
+}
+
+.main-notice {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    bottom: 0;
+    color: white;
+    background-color: #E18484;
 }
