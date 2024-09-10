@@ -1,8 +1,7 @@
-# React + Vite
+# Pepeers - site de moda
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A prototipagem deste projeto foi criado no início da aulas de Front-End no SENAI, o objetivo era criar um site de moda feminina e assim aprender na prática o uso do Figma. Então com pequenas melhoras estou criando o verdadeiro site e espero estudar para finalizar.
+Linguagens:
+- HTML
+- CSS
+- Javascript
