@@ -8,19 +8,19 @@ import './styles.css'
 export default function Main() {
     return (
         <section className='main-container'>
-            <span className='main-title'>
-                <h1>Seu poder,</h1>
-                <h1>Nosso conjunto!</h1>
+            <span className='text'>
+                <h1 className='main-title'>Seu<div className='yellow'>poder,</div></h1>
+                <h1 className='main-title'> nosso </h1><div className='green'> <h1>conjunto!</h1> </div>
             </span>
 
             <div className='main-carrossel'>
                 <img src={outono} alt="Modelo Outono" title='Outono' />
-                <img src={casual} alt="Modelo Casual" title='Casual'/>
+                <img src={casual} alt="Modelo Casual" title='Casual' />
                 <img src={moleton} alt="Modelo Moleton" title="Moleton" />
                 <img src={primavera} alt="Modelo Primavera" title="Primavera" />
             </div>
 
-            <button className='main-button'>Coringa?<Arrow/></button>
+            <button className='main-button'>Coringa?<Arrow /></button>
             <div className='main-notice'>
                 <p>Frete grátis até 12/10/2024</p>
             </div>
@@ -28,5 +28,3 @@ export default function Main() {
         </section>
     )
 }
-
-/* */
