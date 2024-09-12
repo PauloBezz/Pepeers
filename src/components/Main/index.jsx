@@ -9,16 +9,27 @@ export default function Main() {
     return (
         <section className='main-container'>
             <span className='text'>
-                <h1 className='main-title'>Seu<div className='yellow'>poder,</div></h1>
-                <h1 className='main-title'> nosso </h1><div className='green'> <h1>conjunto!</h1> </div>
+                <h1 className='main-power'>Seu
+                    <div className='yellow'>poder,</div>
+                </h1>
+
+                <div className='main-title'>
+                    <h1 className=''> nosso </h1>
+                    <h1 className='green'>conjunto!</h1>
+                </div>
             </span>
 
-            <div className='main-carrossel'>
-                <img src={outono} alt="Modelo Outono" title='Outono' />
-                <img src={casual} alt="Modelo Casual" title='Casual' />
+            <figure className='main-carrossel'>
+                <img src={outono} alt="Modelo Casual" title='Casual' />
                 <img src={moleton} alt="Modelo Moleton" title="Moleton" />
-                <img src={primavera} alt="Modelo Primavera" title="Primavera" />
-            </div>
+                <div className='carrossel-top'>
+                    <img src={casual} alt="Modelo Outono" title='Outono' />
+                </div>
+
+                <div className='carrossel-top'>
+                    <img src={primavera} alt="Modelo Primavera" title="Primavera" />
+                </div>
+            </figure>
 
             <button className='main-button'>Coringa?<Arrow /></button>
             <div className='main-notice'>
