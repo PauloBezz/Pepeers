@@ -16,17 +16,15 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    font-size: 25px;
+    font-size: 20px;
+    /*  para web será 32px */
     font-family: 'Porter Sans Block', sans-serif;
-    text-align: center;
     gap: 10px;
     margin-top: 38px;
 }
 
-.main-title {
+.main-power {
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -34,23 +32,37 @@
     color: #FBC253;
 }
 
+.main-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .green {
     color: #69AF50;
-    font-size: 25px;
 }
 
 .main-carrossel {
     display: flex;
     flex-wrap: wrap;
-    width: fit-content;
+    height: fit-content;
     justify-content: space-around;
-    gap: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 200px;
+    gap: 5px;
 }
 
 .main-carrossel>img {
-    width: 185px;
-    display: flex;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.carrossel-top {
+    position: relative;
+    top: 139px;
+}
+
+.carrossel-top>img {
+    border: 1px solid black;
     border-radius: 15px;
 }
 
