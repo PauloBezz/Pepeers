@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.cdnfonts.com/css/porter-sans-block');
 @import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
 
 .main-container {
@@ -6,18 +6,37 @@
     width: 100%;
     align-items: center;
     flex-direction: column;
-    height: fit-content;
+    height: auto;
     gap: 38px;
     margin: 0;
     padding: 0;
 }
 
-.main-title {
-    text-align: center;
-    font-family: "Fascinate Inline", system-ui;
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     font-size: 25px;
+    font-family: 'Porter Sans Block', sans-serif;
+    text-align: center;
     gap: 10px;
     margin-top: 38px;
+}
+
+.main-title {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.yellow {
+    color: #FBC253;
+}
+
+.green {
+    color: #69AF50;
+    font-size: 25px;
 }
 
 .main-carrossel {
@@ -26,6 +45,7 @@
     width: fit-content;
     justify-content: space-around;
     gap: 10px;
+    margin-bottom: 50px;
 }
 
 .main-carrossel>img {
@@ -37,6 +57,7 @@
 .main-button {
     display: flex;
     position: fixed;
+    cursor: pointer;
     width: 190px;
     height: 55px;
     align-items: center;
@@ -49,6 +70,12 @@
     font-family: "Paprika";
     background-color: #B1E488;
     gap: 20px;
+}
+
+.main-button:active {
+    background-color: green;
+    color: white;
+    font-size: 18px;
 }
 
 .main-notice {
