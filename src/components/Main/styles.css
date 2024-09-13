@@ -1,5 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/porter-sans-block');
 @import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
+
 
 .main-container {
     display: flex;
@@ -52,19 +54,46 @@
 }
 
 .main-carrossel>img {
-    border: 1px solid black;
     border-radius: 15px;
+    box-shadow: 4px 3px #FBC253;
+    cursor: pointer;
+}
+
+.main-carrossel>img:active {
+    box-shadow: 4px 3px black;
 }
 
 .carrossel-top {
+    cursor: pointer;
     position: relative;
     top: 139px;
 }
 
 .carrossel-top>img {
-    border: 1px solid black;
     border-radius: 15px;
+    box-shadow: 4px 3px #69AF50;
 }
+
+.carrossel-top>img:active {
+    box-shadow: 4px 3px black;
+}
+
+
+/* .only-name{
+    position: relative;
+    top: -50px;
+    left: 110px;
+}
+
+.only-name> p{
+    transform: rotate(-9deg);
+    
+    font-size: 20px;
+    color: blue;
+    font-family: "Paprika", system-ui;
+    font-weight: 800;
+    
+} */
 
 .main-button {
     display: flex;
