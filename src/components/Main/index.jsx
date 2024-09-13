@@ -20,10 +20,18 @@ export default function Main() {
             </span>
 
             <figure className='main-carrossel'>
-                <img src={outono} alt="Modelo Casual" title='Casual' />
-                <img src={moleton} alt="Modelo Moleton" title="Moleton" />
+
+                <img src={outono} alt="Modelo Outono" title='Outono' />
+
+                <img src={casual} alt="Modelo Casual" title='Casual' />
+                {/* <p className='only-name'>Casual</p> */}
+
+
+
+
                 <div className='carrossel-top'>
-                    <img src={casual} alt="Modelo Outono" title='Outono' />
+                    <img src={moleton} alt="Modelo Moleton" title="Moleton" />
+
                 </div>
 
                 <div className='carrossel-top'>
