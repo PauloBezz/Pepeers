@@ -5,8 +5,8 @@ export function Search() {
     
     return (
         <div className='search-container'>
-            <img src={search} alt="" />
-            <input type="text" />
+            <button><img src={search} alt="" /></button>
+            <input type="text"  placeholder='Pesquisa'/>
         </div>
     )
 }
