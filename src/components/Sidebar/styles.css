@@ -1,25 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
 
 
-.sidebar{
+.sidebar-container{
     display: flex;
-    width: 100%;
-    justify-content: center;   
+    justify-content: center;
+    margin-top: 2px;
 }
 
 
-.sidebar-container {
-    width: 1387px;
+.sidebar-content {
+    max-width: 1387px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    
+    background-color:#C877F2;
+    border-radius: 7px;
+    gap: 20px;
 }
 
 .sidebar-link{
-    text-decoration: none;
     font-size: 28px;
     font-family: "Paprika", system-ui;
     font-weight: 400;
     font-style: normal;
+    text-decoration: none;
+}
+
+.sidebar-link:hover{
+    color: aliceblue;
+}
+
+.sidebar-link:active{
+    color: black;
+}
+
+
+@media screen and (max-width: 1040px){
+
+    .sidebar-link{
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+/*  MOBILE  */
+@media screen and (max-width: 650px){
+
+    .sidebar-container{
+        display: none;
+    }
 }
