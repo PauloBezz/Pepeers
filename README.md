@@ -6,3 +6,6 @@ Linguagens:
 - HTML
 - CSS
 - Javascript
+
+Biblioteca
+- React (start com npm run dev)
