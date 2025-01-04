@@ -9,7 +9,6 @@
     align-items: center;
     flex-direction: column;
     height: auto;
-    gap: 38px;
     margin: 0;
     padding: 0;
 }
@@ -21,7 +20,7 @@
     font-size: 20px;
     /*  para web será 32px */
     font-family: 'Porter Sans Block', sans-serif;
-    gap: 10px;
+    gap: 5px;
     margin-top: 38px;
 }
 
@@ -35,35 +34,71 @@
 }
 
 .main-title {
+    align-self: flex-end;
+    padding-left: 80px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    gap: 10px;
 }
 
 .green {
     color: #69AF50;
 }
 
+
 .main-carrossel {
     display: flex;
-    flex-wrap: wrap;
-    height: fit-content;
+    width: 90%;
+
+
+}
+
+.first {
+    display: flex;
     justify-content: space-around;
-    margin-bottom: 200px;
+    width: 50%;
+    flex-wrap: wrap;
     gap: 5px;
 }
 
-.main-carrossel>div>img {
+.first>div:last-child {
+    position: relative;
+    top: 80px;
+}
+
+.first>div>img {
     border-radius: 15px;
     box-shadow: 4px 3px #FBC253;
     cursor: pointer;
 }
 
-.main-carrossel>div>img:active {
+.first>div>img:active {
     box-shadow: 4px 3px black;
 }
 
-.category{
+.second {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    flex-wrap: wrap-reverse;
+    gap: 5px;
+}
+
+.second>div:first-child {
+    cursor: pointer;
+    position: relative;
+    top: 80px;
+}
+
+.second>div>img {
+    border-radius: 15px;
+    box-shadow: 4px 3px #69AF50;
+}
+
+.second>div>img:active {
+    box-shadow: 4px 3px black;
+}
+
+.category {
     position: relative;
     text-align: center;
     bottom: 40px;
@@ -74,31 +109,17 @@
     font-size: 20px;
     color: deeppink;
     font-weight: bold;
-    padding: 2px 0px; 
+    padding: 2px 0px;
     background-color: #E18484;
 }
 
-.carrossel-top {
-    cursor: pointer;
-    position: relative;
-    top: 139px;
-}
-
-.carrossel-top>img {
-    border-radius: 15px;
-    box-shadow: 4px 3px #69AF50;
-}
-
-.carrossel-top>img:active {
-    box-shadow: 4px 3px black;
-}
 
 .main-button {
     display: flex;
     position: fixed;
     cursor: pointer;
     width: 190px;
-    height: 55px;
+    height: 42px;
     align-items: center;
     justify-content: center;
     border-radius: 25px;
@@ -126,4 +147,90 @@
     bottom: 0;
     color: white;
     background-color: #E18484;
+}
+
+@media screen and (max-width: 700px) {
+
+    .text {
+        font-size: 12px;
+        margin-top: 28px;
+    }
+
+    .main-title {
+        padding-left: 20px;
+    }
+
+    .main-carrossel {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .first {
+        width: 100%;
+        gap: 0px;
+    }
+
+    .first>div>img {
+        width: 120px;
+    }
+
+    .first>div:first-child {
+        cursor: pointer;
+        position: relative;
+        top: 20px;
+    }
+
+    .first>div:last-child {
+        top: 60px;
+    }
+
+    .second {
+        justify-content: space-around;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .second>div>img {
+        width: 120px;
+    }
+
+    .second>div:first-child {
+        top: 120px;
+        position: relative;
+    }
+
+    .second>div:last-child {
+        position: relative;
+        top: 70px;
+    }
+
+    .category {
+        left: 15px;
+        top: 0px;
+        right: 5px;
+        width: 120px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+
+
+    .main-button {
+        width: 150px;
+        height: 32px;
+        font-size: 16px;
+        gap: 10px;
+        bottom: 20px;
+    }
+
+    .main-button:active {
+        font-size: 12px;
+    }
+
+    .main-notice {
+        width: 90%;
+        background-color: transparent;
+        font-size: 15px;
+        color: #E18484;
+    }
 }
