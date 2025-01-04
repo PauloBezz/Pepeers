@@ -2,11 +2,11 @@ import './styles.css'
 import search from './Lupa.svg'
 
 export function Search() {
-    
+
     return (
-        <div className='search-container'>
+        <article className='search-container'>
             <button><img src={search} alt="" /></button>
-            <input type="text" name='search' placeholder='Pesquisa'/>
-        </div>
+            <input type="search" name='search' placeholder='Pesquisa' />
+        </article>
     )
 }
