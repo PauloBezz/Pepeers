@@ -8,12 +8,12 @@ import Arrow from './assets/Arrow'
 export default function Main() {
     return (
         <section className='main-container'>
-            <span className='text'>
-                <h1 className='main-power'>Seu
+            <span className='main-title'>
+                <h1 className='power'>Seu
                     <div className='yellow'>poder,</div>
                 </h1>
 
-                <div className='main-title'>
+                <div className='title'>
                     <h1>nosso</h1>
                     <h1 className='green'>conjunto!</h1>
                 </div>
