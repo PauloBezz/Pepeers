@@ -1,7 +1,7 @@
-@import url('https://fonts.cdnfonts.com/css/porter-sans-block');
 @import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Paprika&family=Playwrite+AU+SA:wght@100..400&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,10 +21,15 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    font-family: 'Porter Sans Block', sans-serif;
-    font-size: 20px;
+    font-size: 28px;
     gap: 5px;
     margin-top: 38px;
+}
+
+.main-title>h1 {
+    font-family: "Major Mono Display", serif;
+    font-style: normal;
+    font-weight: 100;
 }
 
 .power {
@@ -33,6 +38,7 @@
 }
 
 .yellow {
+    font-family: "Major Mono Display", serif;
     color: #FBC253;
 }
 
@@ -41,6 +47,10 @@
     padding-left: 80px;
     display: flex;
     gap: 10px;
+}
+
+.title>h1 {
+    font-family: "Major Mono Display", serif;
 }
 
 .green {
@@ -70,7 +80,7 @@
 
 .first>div>img {
     border-radius: 15px;
-    box-shadow: 4px 3px #FBC253;
+    box-shadow: 4px 3px #FEABFF;
     cursor: pointer;
 }
 
@@ -94,11 +104,11 @@
 
 .second>div>img {
     border-radius: 15px;
-    box-shadow: 4px 3px #69AF50;
+    box-shadow: 4px 3px #FEABFF;
 }
 
 .second>div>img:active {
-    box-shadow: 4px 3px black;
+    box-shadow: 4px 3px gray;
 }
 
 .category {
@@ -107,13 +117,14 @@
     bottom: 40px;
     left: 35px;
     right: 5px;
-    font-family: "Paprika", system-ui;
+    font-family: 'Paprika', Arial, Helvetica, sans-serif;
     transform: rotate(-9deg);
     font-size: 20px;
-    color: deeppink;
-    font-weight: bold;
+    color: white;
+
     padding: 2px 0px;
     background-color: #E18484;
+    border-radius: 10px;
 }
 
 
@@ -130,13 +141,13 @@
     bottom: 30px;
 
     font-size: 20px;
-    font-family: "Paprika";
-    background-color: #B1E488;
+    font-family: 'Paprika', Arial, Helvetica, sans-serif;
+    background-color: #95EE98;
+    opacity: 0.8;
     gap: 20px;
 }
 
 .main-button:active {
-    background-color: green;
     color: white;
     font-size: 18px;
 }
@@ -155,7 +166,7 @@
 @media screen and (max-width: 700px) {
 
     .main-title {
-        font-size: 12px;
+        font-size: 16px;
         margin-top: 28px;
     }
 
@@ -210,7 +221,7 @@
 
     .category {
         left: 15px;
-        top: 0px;
+        bottom: 16px;
         right: 5px;
         width: 120px;
         font-size: 16px;

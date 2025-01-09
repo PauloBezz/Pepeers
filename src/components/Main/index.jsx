@@ -4,8 +4,29 @@ import casual from './assets/Casual.svg'
 import moleton from './assets/Moleton.svg'
 import primavera from './assets/Primavera.svg'
 import Arrow from './assets/Arrow'
+import { Card } from '../Card'
 
 export default function Main() {
+
+
+    const date = new Date();
+    date.setDate(date.getDate() + 2);
+    let dia = date.getDate();
+    let mes = date.getMonth() + 1;
+    let ano = date.getFullYear();
+    console.log(dia);
+
+    if (dia < 10) {
+        dia = '0' + dia;
+    }
+
+    if (mes < 10) {
+        mes = '0' + mes
+    }
+
+
+    const day = `${dia}/${mes}/${ano}`
+
     return (
         <section className='main-container'>
             <span className='main-title'>
@@ -21,30 +42,19 @@ export default function Main() {
 
             <figure className='main-carrossel'>
                 <article className='first'>
-                    <div>
-                        <img src={outono} alt="Modelo Outono" title='Outono' />
-                        <p className='category'>Outono Pink</p>
-                    </div>
-                    <div>
-                        <img src={casual} alt="Modelo Casual" title='Casual' />
-                        <p className='category'>Casual</p>
-                    </div>
+
+                    <Card src={outono} alt={"Modelo Outono"} title={'Outono'} category={'Outono Pink'} />
+                    <Card src={casual} alt={"Modelo Casual"} title={'Casual'} category={'Casual'} />
                 </article>
                 <div className='second'>
-                    <div >
-                        <img src={moleton} alt="Modelo Moleton" title="Moleton" />
-                        <p className='category'>Moleton</p>
-                    </div>
-                    <div >
-                        <img src={primavera} alt="Modelo Primavera" title="Primavera" />
-                        <p className='category'>Primavera</p>
-                    </div>
+                    <Card src={moleton} alt={"Modelo Moleton"} title={'Moleton'} category={'Moleton'} />
+                    <Card src={primavera} alt={"Modelo Primavera"} title={'Primavera'} category={'Primavera'} />
                 </div>
             </figure>
 
             <button className='main-button'>Coringa?<Arrow /></button>
             <div className='main-notice'>
-                <p>Frete grátis até 12/10/2024</p>
+                <p>{`Frete grátis até ${day}`}</p>
             </div>
 
         </section>
