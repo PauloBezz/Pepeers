@@ -30,11 +30,44 @@
     background-color: aliceblue;
 }
 
+.menuOpen {
+    display: none;
+}
+
 /*  MOBILE  */
 @media screen and (max-width: 650px) {
 
     .icons :last-child {
         display: none;
+    }
+
+    .header-search {
+        display: flex;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: fit-content;
+        z-index: 20;
+    }
+
+    .menuOpen {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        height: 92.3vh;
+        justify-content: center;
+        gap: 40px;
+        flex-direction: column;
+        width: 100%;
+        background-color: #FEABFF;
+        z-index: 10;
+    }
+    
+    .menuOpen>a {
+        font-size: 22px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-decoration: none;
     }
 }
 
