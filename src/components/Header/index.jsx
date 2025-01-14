@@ -1,3 +1,4 @@
+import './styles.css'
 import logo from './assets/img/logo.svg'
 import search from './assets/img/search.svg'
 import cart from './assets/img/cart.svg'
@@ -5,7 +6,6 @@ import menu from './assets/img/menu.svg'
 import config from './assets/img/config.svg'
 import { Search } from '../Search/index'
 import { useState } from 'react'
-import './styles.css'
 
 export default function Header() {
     const [open, setOpen] = useState(false)
@@ -41,16 +41,13 @@ export default function Header() {
 
             </header>
             {open && (
-                <>
-                    <div className='overlay'></div>
-                    <nav className='menuOpen'>
-                        <a className='menu-link' href="#">Promoções</a>
-                        <a className='menu-link' href="#">Lançamentos</a>
-                        <a className='menu-link' href="#">Vestidos</a>
-                        <a className='menu-link' href="#">Infantil</a>
-                        <a className='menu-link' href="#">Acessórios</a>
-                    </nav>
-                </>
+                <nav className='menuOpen'>
+                    <a className='menu-link' href="#">Promoções</a>
+                    <a className='menu-link' href="#">Lançamentos</a>
+                    <a className='menu-link' href="#">Vestidos</a>
+                    <a className='menu-link' href="#">Infantil</a>
+                    <a className='menu-link' href="#">Acessórios</a>
+                </nav>
             )}
         </>
     )
