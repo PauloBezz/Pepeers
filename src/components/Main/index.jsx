@@ -8,7 +8,6 @@ import { Card } from '../Card'
 
 export default function Main() {
 
-
     const date = new Date();
     date.setDate(date.getDate() + 2);
     let dia = date.getDate();
@@ -46,10 +45,10 @@ export default function Main() {
                     <Card src={outono} alt={"Modelo Outono"} title={'Outono'} category={'Outono Pink'} />
                     <Card src={casual} alt={"Modelo Casual"} title={'Casual'} category={'Casual'} />
                 </article>
-                <div className='second'>
+                <article className='second'>
                     <Card src={moleton} alt={"Modelo Moleton"} title={'Moleton'} category={'Moleton'} />
                     <Card src={primavera} alt={"Modelo Primavera"} title={'Primavera'} category={'Primavera'} />
-                </div>
+                </article>
             </figure>
 
             <button className='main-button'>Coringa?<Arrow /></button>
