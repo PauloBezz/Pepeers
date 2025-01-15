@@ -1,11 +1,11 @@
+import './styles.css'
 import logo from './assets/logo.svg'
 import backimage from './assets/woman.svg'
-import './styles.css'
 
 export default function Login() {
     return (
         <main className='login-container'>
-            <section className='login-content'>
+            <div className='login-content'>
                 <a href="/login">
                     <img src={logo} alt="" className='login-logo' />
                 </a>
@@ -26,8 +26,8 @@ export default function Login() {
                     <a>Esqueceu a senha?</a>
 
                 </div>
-                    <button className='btn-login'>Continuar</button>
-            </section>
+                <button className='btn-login'>Continuar</button>
+            </div>
         </main>
     )
 }

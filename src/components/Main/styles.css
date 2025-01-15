@@ -85,7 +85,7 @@
 }
 
 .first>div>img:active {
-    box-shadow: 4px 3px black;
+    box-shadow: 4px 3px grey;
 }
 
 .second {
@@ -105,6 +105,7 @@
 .second>div>img {
     border-radius: 15px;
     box-shadow: 4px 3px #FEABFF;
+    cursor: pointer;
 }
 
 .second>div>img:active {
@@ -238,7 +239,8 @@
     }
 
     .main-button:active {
-        font-size: 12px;
+        font-size: 14px;
+        color: grey;
     }
 
     .main-notice {
