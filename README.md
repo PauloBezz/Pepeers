@@ -6,7 +6,6 @@ A prototipagem deste projeto foi criada no início da aulas de Front-End no SENA
 - HTML, CSS e Javascript - React
 - Figma
 - Adobe color para definir cores
-- SVGRepo para
 
 # Comandos para iniciar
 - npm install (baixar node_modules)
