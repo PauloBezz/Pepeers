@@ -1,17 +1,14 @@
 import './styles.css'
 import logo from './assets/logo.svg'
-import backimage from './assets/woman.svg'
 
 export default function Login() {
     return (
         <main className='login-container'>
             <div className='login-content'>
                 <a href="/login">
-                    <img src={logo} alt="" className='login-logo' />
+                    <img src={logo} alt="Logo" title='Logo' className='login-logo' />
                 </a>
-
                 <h3>Moda feminina e realização</h3>
-
                 <h1>Login</h1>
 
                 <div className='inputs'>
