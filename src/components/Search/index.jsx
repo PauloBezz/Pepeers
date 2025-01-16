@@ -4,9 +4,9 @@ import search from './Lupa.svg'
 export function Search() {
 
     return (
-        <article className='search-container'>
-            <button><img src={search} alt="" /></button>
+        <form className='search-container'>
             <input type="search" name='search' placeholder='Pesquisa' />
-        </article>
+            <button><img src={search} alt="Button" /></button>
+        </form>
     )
 }
