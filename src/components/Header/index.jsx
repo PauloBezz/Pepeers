@@ -1,27 +1,38 @@
 import './styles.css'
-import logo from './assets/img/logo.svg'
-import search from './assets/img/search.svg'
-import cart from './assets/img/cart.svg'
-import menu from './assets/img/menu.svg'
-import config from './assets/img/config.svg'
+import logoSmall from './assets/logoSmall.svg'
+import logo from './assets/logo.svg'
+import search from './assets/search.svg'
+import cart from './assets/cart.svg'
+import menu from './assets/menu.svg'
+import config from './assets/config.svg'
 import { Search } from '../Search/index'
 import { useState } from 'react'
+import { Config } from '../Config'
 
 export default function Header() {
     const [open, setOpen] = useState(false)
     const [find, setFind] = useState(false)
+    const [conf, setConf] = useState(false)
+
 
     const handleOpen = () => {
-        setOpen(!open)
+        setOpen(!open);
+    }
+    
+    const handleSearch = () => {
+        setFind(!find);
     }
 
-    const handleSearch = () => {
-        setFind(!find)
+    const handleConfig = () => {
+        setConf(!conf);
     }
 
     return (
         <>
             <header className='container'>
+                <a href="/" className='logoSmall'>
+                    <img src={logoSmall} alt="Logo" title='Logo' />
+                </a>
                 <a href="/">
                     <img src={logo} alt="Logo" title='Logo' className='logo' />
                 </a>
@@ -30,7 +41,7 @@ export default function Header() {
                     <img src={cart} alt="Cart" title='Cart' />
                     <img src={menu} alt="Menu" className='icon-menu' title='Menu' onClick={handleOpen} />
 
-                    <img src={config} alt="Options" title='Options' />
+                    <img src={config} alt="Options" title='Options' onClick={handleConfig} />
                 </div>
 
                 {find && (
@@ -39,7 +50,9 @@ export default function Header() {
                     </div>
                 )}
 
+
             </header>
+
             {open && (
                 <nav className='menuOpen'>
                     <a className='menu-link' href="#">Promoções</a>
@@ -48,6 +61,10 @@ export default function Header() {
                     <a className='menu-link' href="#">Infantil</a>
                     <a className='menu-link' href="#">Acessórios</a>
                 </nav>
+            )}
+
+            {conf && (
+                <Config />
             )}
         </>
     )

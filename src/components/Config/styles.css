@@ -1,0 +1,22 @@
+.container-config{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    padding: 15px 30px;
+    background-color: #C877F2;
+    border-radius: 6px;
+    gap: 15px;
+
+}
+
+.container-config>a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFF;
+}
+.container-config>a:hover{
+    color: black;
+}
