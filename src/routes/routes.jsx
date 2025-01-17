@@ -1,6 +1,6 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import { Home } from '../pages/Home/index'
-import Login from '../pages/Login'
+import Login, { SignUp } from '../pages/Login'
 
 export default function Router() {
     return (
@@ -8,6 +8,7 @@ export default function Router() {
             <Routes>
                 <Route Component={Home} path="/" />
                 <Route Component={Login} path="/login" />
+                <Route Component={SignUp} path="/signup" />
             </Routes>
         </BrowserRouter>
     )
