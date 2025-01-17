@@ -6,14 +6,29 @@
 
 .login-container {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     align-items: center;
-    justify-content: center;
     background-image: url('./assets/woman.svg');
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #FFD9D9;
+}
 
+.login-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 90%;
+    max-width: 700px;
+    margin-bottom: 300px;
+}
+
+.login-title>h3 {
+    align-self: flex-end;
+    font-style: italic;
+    font-weight: 200;
 }
 
 .login-content {
@@ -28,12 +43,10 @@
     border-radius: 15px;
     opacity: 0.8;
     gap: 30px;
-
 }
 
-.login-content>h3{
-    font-style: italic;
-    font-weight: 200;
+.login-content>h1 {
+    color: #FF1717;
 }
 
 .login-logo {
@@ -47,10 +60,17 @@
     flex-direction: column;
     width: 80%;
     align-items: center;
+    gap: 10px;
 }
 
-.inputs{
+.inputs>div {
+    display: flex;
+    font-size: 16px;
     gap: 10px;
+}
+
+.inputs>div>a {
+    text-decoration: none;
 }
 
 .inputs>article>input {
@@ -58,14 +78,16 @@
     height: 30px;
     border-radius: 6px;
     border: 1px solid #FF1717;
+    padding-left: 5px;
 }
 
-.inputs > a{
+.inputs>a {
     margin-top: 20px;
     font-size: 12px;
     color: #FF1717;
     align-self: flex-end;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .btn-login {
@@ -75,18 +97,21 @@
     width: 260px;
     height: 40px;
     border-radius: 10px;
-    border: transparent;
     font-size: 20px;
     background-color: white;
     cursor: pointer;
+    border: 1px solid transparent;
+    transform: 1;
 }
 
 .btn-login:hover {
-    background-color:pink;
+    background-color: pink;
+    border: 1px solid black;
     color: #FF1717;
     font-weight: 600;
 }
 
-.btn-login:active{
+.btn-login:active {
+    color: pink;
     background-color: black;
 }
