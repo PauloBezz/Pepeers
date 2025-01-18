@@ -1,9 +1,9 @@
 import Router from "./routes/routes"
 
-export default function App() {
+export const App = () => {
   return (
     <>
-      <Router/>
+      <Router />
     </>
   )
 }

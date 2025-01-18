@@ -13,7 +13,6 @@ export default function Main() {
     let dia = date.getDate();
     let mes = date.getMonth() + 1;
     let ano = date.getFullYear();
-    console.log(dia);
 
     if (dia < 10) {
         dia = '0' + dia;
