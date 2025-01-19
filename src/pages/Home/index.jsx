@@ -1,3 +1,4 @@
+import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import Main from '../../components/Main'
 import Sidebar from '../../components/Sidebar'
@@ -7,8 +8,9 @@ export function Home() {
     return (
         <>
             <Header />
-            <Sidebar/>
+            <Sidebar />
             <Main />
+            <Footer />
         </>
     )
 }
