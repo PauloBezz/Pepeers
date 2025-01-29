@@ -4,10 +4,11 @@
     height: fit-content;
     background-color: pink;
     align-items: center;
-    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
     margin-bottom: 20px;
+    justify-content: center;
+    padding: 15px 0px ; 
 }
 
 .footer-logo {
@@ -15,17 +16,35 @@
     width: 168px;
 }
 
+.footer-content {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    flex-wrap: wrap;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    gap: 20px;
+}
+
 .footer-logoSmall {
     display: none;
 }
 
-.footer-container>div {
+.footer-links {
     display: flex;
     gap: 20px;
 }
 
-.footer-container>div>a {
+.footer-links>a {
     text-decoration: none;
+    color: black;
+    border: 2px solid transparent; 
+}
+
+.footer-links>a:hover {
+    border-bottom: 2px solid red;
 }
 
 @media screen and (max-width:650px) {
