@@ -10,14 +10,12 @@ export default function Footer() {
                 <img src={logo} alt="logo" className='footer-logo' />
                 <img src={logoSmall} alt="logo" className='footer-logoSmall' />
 
-
-                <p>Copyright@ 2023-2025 Pepeeps. Todos direitos reservados ao uso.</p>
                 <div className='footer-links'>
                     <Link>Contato</Link>
                     <Link>Trabalhe conosco</Link>
                 </div>
-
             </div>
+            <p>Copyright@ 2023-2025 Pepeeps. Todos direitos reservados ao uso.</p>
         </footer>
     )
 }
