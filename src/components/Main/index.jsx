@@ -5,6 +5,7 @@ import moleton from './assets/Moleton.svg'
 import primavera from './assets/Primavera.svg'
 import Arrow from './assets/Arrow'
 import { Card } from '../Card'
+import { useNavigate } from 'react-router-dom'
 
 export default function Main() {
 
@@ -24,6 +25,11 @@ export default function Main() {
 
 
     const day = `${dia}/${mes}/${ano}`
+
+    const navigate = useNavigate()
+    const handleSelection = () => {
+        navigate('/product')
+    }
 
     return (
         <section className='main-container'>
@@ -50,11 +56,10 @@ export default function Main() {
                 </article>
             </figure>
 
-            <button className='main-button'>Coringa?<Arrow /></button>
+            <button className='main-button' onClick={handleSelection}>Coringa?<Arrow /></button>
             <div className='main-notice'>
                 <p>{`Frete grátis até ${day}`}</p>
             </div>
-
         </section>
     )
 }
