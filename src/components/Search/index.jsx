@@ -1,5 +1,5 @@
 import './styles.css'
-import search from './Lupa.svg'
+import search from './assets/Lupa.svg'
 
 export function Search() {
 
