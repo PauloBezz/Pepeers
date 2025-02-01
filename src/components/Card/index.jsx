@@ -1,10 +1,10 @@
 
 
-export function Card({ src, alt, title, category }) {
+export function Card({ onClick, src, alt, title, category }) {
     return (
-        <div>
+        <button onClick={onClick} >
             <img src={src} alt={alt} title={title} />
             <p className='category'>{category}</p>
-        </div>
+        </button>
     )
 }
