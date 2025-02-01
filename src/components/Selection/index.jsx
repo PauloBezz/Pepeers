@@ -1,30 +1,32 @@
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 
-export default function Selection({ title, image, items, priceItem, price, size, color }) {
+
+export default function Selection({ data }) {
+    const { index } = useParams();
+    const item = data?.[index]
+    const { id, image, title, description, size, color, price } = item;
     return (
-        <>
-            <section>
-                <img src={image} alt="" />
+        <main>
+            <section key={id}>
+                <div>
+                    <img src={image} alt={`Conjunto ${title}`} />
+                </div>
                 <aside>
                     <div>
                         <div>
                             <h1>{title}</h1>
-                            <ul>
-                                <li>{items}
-                                    <p>{priceItem}</p>
-                                </li>
-                                <input type="text" value={size} />
-                            </ul>
+                            <p>{description}</p>
+                            {/* <input type="radio" name="size" value={size} /> */}
                         </div>
                         <div>
-                            <input type="checkbox" value={color} />
+                            {/* <input type="checkbox" name="color" value={color} /> */}
                         </div>
                         <h5>{price}</h5>
                     </div>
                     <button>Adicionar ao carrinho</button>
-                    <Link>Forma de pagamento</Link>
+                    <Link to={''}>Forma de pagamento</Link>
                 </aside>
             </section>
-        </>
+        </main>
     )
 }
