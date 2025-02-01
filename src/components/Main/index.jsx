@@ -6,6 +6,7 @@ import primavera from './assets/Primavera.svg'
 import Arrow from './assets/Arrow'
 import { Card } from '../Card'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 
 export default function Main() {
 
@@ -23,13 +24,20 @@ export default function Main() {
         mes = '0' + mes
     }
 
-
     const day = `${dia}/${mes}/${ano}`
+    const [clothing, setClothing] = useState(0);
+    const navigate = useNavigate();
 
-    const navigate = useNavigate()
-    const handleSelection = () => {
-        navigate('/product')
-    }
+    const handleSelection = (index) => {
+        if (index !== clothing) {
+            setClothing(index);
+            navigate(`/product/${index}`);
+        }
+        else {
+            alert('Erro, nossa equipe já vai consertar!')
+        }
+    };
+
 
     return (
         <section className='main-container'>
@@ -46,17 +54,16 @@ export default function Main() {
 
             <figure className='main-carrossel'>
                 <article className='first'>
-
-                    <Card src={outono} alt={"Modelo Outono"} title={'Outono'} category={'Outono Pink'} />
-                    <Card src={casual} alt={"Modelo Casual"} title={'Casual'} category={'Casual'} />
+                    <Card src={outono} alt={"Modelo Outono"} title={'Outono'} category={'Outono Pink'} onClick={() => handleSelection(0)} />
+                    <Card src={casual} alt={"Modelo Casual"} title={'Casual'} category={'Casual'} onClick={() => handleSelection(1)} />
                 </article>
                 <article className='second'>
-                    <Card src={moleton} alt={"Modelo Moleton"} title={'Moleton'} category={'Moleton'} />
-                    <Card src={primavera} alt={"Modelo Primavera"} title={'Primavera'} category={'Primavera'} />
+                    <Card src={moleton} alt={"Modelo Moleton"} title={'Moleton'} category={'Moleton'} onClick={() => handleSelection(2)} />
+                    <Card src={primavera} alt={"Modelo Primavera"} title={'Primavera'} category={'Primavera'} onClick={() => handleSelection(3)} />
                 </article>
             </figure>
 
-            <button className='main-button' onClick={handleSelection}>Coringa?<Arrow /></button>
+            <button className='main-button' onClick={() => handleSelection(4)}>Coringa?<Arrow /></button>
             <div className='main-notice'>
                 <p>{`Frete grátis até ${day}`}</p>
             </div>
