@@ -1,0 +1,67 @@
+{
+    "main": [
+        {
+            "id": 1,
+            "image": "/assets/Outono.svg"
+        },
+        {
+            "id": 2,
+            "image": "/assets/Casual.svg"
+        },
+        {
+            "id": 3,
+            "image": "/assets/Moleton.svg"
+        },
+        {
+            "id": 4,
+            "image": "/assets/Primavera.svg"
+        }
+    ],
+    "clothing": [
+        {
+            "id": 1,
+            "image": "/assets/Outono.svg",
+            "title": "Conjunto Outono Rosa",
+            "description": "Passar frio? Ninguém merece, então dá uma olhada nesse conjunto que além de cumprir seu papel te deixará elegante.",
+            "size": "P",
+            "color": "Rosa",
+            "price": "Por: 399,90"
+        },
+        {
+            "id": 2,
+            "image": "/assets/Casual.svg",
+            "title": "Conjunto Casual",
+            "description": "Esse é o mais versátil, vá para onde for com estilo que sempre é atual.",
+            "size": "",
+            "color": "",
+            "price": "Por: 149,90"
+        },
+        {
+            "id": 3,
+            "image": "/assets/Moleton.svg",
+            "title": "Moleton",
+            "description": "Quer sair combinando ou somente busca conforto? Com moleton não tem como errar.",
+            "size": "",
+            "color": "",
+            "price": "Por: 169,90"
+        },
+        {
+            "id": 4,
+            "image": "/assets/Primavera.svg",
+            "title": "Conjunto Primavera",
+            "description": "Em um clima agradável nada melhor do que sentir a paz de estar bem consigo mesma.",
+            "size": "",
+            "color": "",
+            "price": "Por: 254,90"
+        },
+        {
+            "id": 5,
+            "image": "/assets/Coringa.svg",
+            "title": "Conjunto Coringa",
+            "description": "Seus olhos brilharam? Sem medo de errar você sabe que esse terá um lugar especial no guarda-roupa.",
+            "size": "",
+            "color": "",
+            "price": "Por: 751,80"
+        }
+    ]
+}

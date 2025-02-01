@@ -1,13 +1,13 @@
 import Header from "../../components/Header";
 import Selection from "../../components/Selection";
+import { clothing } from '../../data/info.json'
 
 
-
-export default function Product() {
+export const Product = () => {
     return (
         <>
             <Header />
-            <Selection />
+            <Selection data={clothing} />
         </>
     )
 }
