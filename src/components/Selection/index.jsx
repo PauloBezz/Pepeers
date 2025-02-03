@@ -1,32 +1,31 @@
 import { Link, useParams } from "react-router-dom"
-
+import './styles.css'
 
 export default function Selection({ data }) {
     const { index } = useParams();
     const item = data?.[index]
-    const { id, image, title, description, size, color, price } = item;
+    const { id, image, title, description, items, price } = item;
     return (
-        <main>
-            <section key={id}>
-                <div>
-                    <img src={image} alt={`Conjunto ${title}`} />
+        <section key={id} className="selection-container">
+            <div>
+                <img src={image} alt={`Conjunto ${title}`} />
+            </div>
+            <aside className="selection-content">
+
+                <div className="selection-text">
+                    <span>
+                        <h1>Modelo {title}</h1>
+                        <p>{description}</p>
+                        <h3>{items}</h3>
+                    </span>
+                    <h5>{price}</h5>
                 </div>
-                <aside>
-                    <div>
-                        <div>
-                            <h1>{title}</h1>
-                            <p>{description}</p>
-                            {/* <input type="radio" name="size" value={size} /> */}
-                        </div>
-                        <div>
-                            {/* <input type="checkbox" name="color" value={color} /> */}
-                        </div>
-                        <h5>{price}</h5>
-                    </div>
-                    <button>Adicionar ao carrinho</button>
-                    <Link to={''}>Forma de pagamento</Link>
-                </aside>
-            </section>
-        </main>
+
+                <div className="selection-actions">
+                    <p>Escolher forma de pagamento</p>
+                    <Link to={''}>Adicionar o pagamento</Link>
+                </div>
+            </aside>
+        </section>
     )
 }
