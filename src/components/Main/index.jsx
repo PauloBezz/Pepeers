@@ -25,7 +25,7 @@ export default function Main() {
     }
 
     const day = `${dia}/${mes}/${ano}`
-    const [clothing, setClothing] = useState(0);
+    const [clothing, setClothing] = useState(null);
     const navigate = useNavigate();
 
     const handleSelection = (index) => {
