@@ -1,66 +1,61 @@
 {
     "main": [
         {
-            "id": 1,
+            "id": 0,
             "image": "/assets/Outono.svg"
         },
         {
-            "id": 2,
+            "id": 1,
             "image": "/assets/Casual.svg"
         },
         {
-            "id": 3,
+            "id": 2,
             "image": "/assets/Moleton.svg"
         },
         {
-            "id": 4,
+            "id": 3,
             "image": "/assets/Primavera.svg"
         }
     ],
     "clothing": [
         {
-            "id": 1,
+            "id": 0,
             "image": "/assets/Outono.svg",
-            "title": "Conjunto Outono Rosa",
+            "title": "Outono Rosa",
             "description": "Passar frio? Ninguém merece, então dá uma olhada nesse conjunto que além de cumprir seu papel te deixará elegante.",
-            "size": "P",
-            "color": "Rosa",
+            "items": "",
             "price": "Por: 399,90"
         },
         {
-            "id": 2,
+            "id": 1,
             "image": "/assets/Casual.svg",
-            "title": "Conjunto Casual",
+            "title": "Casual",
             "description": "Esse é o mais versátil, vá para onde for com estilo que sempre é atual.",
-            "size": "",
-            "color": "",
+            "items": "Óculos de Sol, blusa Calvin Klein, camiseta e calça jeans e o Tênis Vans.",
             "price": "Por: 149,90"
         },
         {
-            "id": 3,
+            "id": 2,
             "image": "/assets/Moleton.svg",
             "title": "Moleton",
             "description": "Quer sair combinando ou somente busca conforto? Com moleton não tem como errar.",
-            "size": "",
-            "color": "",
+            "items": "",
             "price": "Por: 169,90"
         },
         {
-            "id": 4,
+            "id": 3,
             "image": "/assets/Primavera.svg",
-            "title": "Conjunto Primavera",
+            "title": "Primavera",
             "description": "Em um clima agradável nada melhor do que sentir a paz de estar bem consigo mesma.",
-            "size": "",
-            "color": "",
+            "items": "",
             "price": "Por: 254,90"
         },
         {
-            "id": 5,
+            "id": 4,
             "image": "/assets/Coringa.svg",
-            "title": "Conjunto Coringa",
+            "title": "Coringa",
             "description": "Seus olhos brilharam? Sem medo de errar você sabe que esse terá um lugar especial no guarda-roupa.",
-            "size": "",
-            "color": "",
+            "items": "",
             "price": "Por: 751,80"
         }
     ]
