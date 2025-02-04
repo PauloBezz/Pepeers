@@ -5,16 +5,17 @@ export default function Selection({ data }) {
     const { index } = useParams();
     const item = data?.[index]
     const { id, image, title, description, items, price } = item;
+
     return (
         <section key={id} className="selection-container">
-            <div>
+            <div className="selection-image">
                 <img src={image} alt={`Conjunto ${title}`} />
             </div>
             <aside className="selection-content">
 
-                <div className="selection-text">
+                <h1>Modelo {title}</h1>
+                <div className="selection-info">
                     <span>
-                        <h1>Modelo {title}</h1>
                         <p>{description}</p>
                         <h3>{items}</h3>
                     </span>
