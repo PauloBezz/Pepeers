@@ -23,7 +23,7 @@
             "image": "/assets/Outono.svg",
             "title": "Outono Rosa",
             "description": "Passar frio? Ninguém merece, então dá uma olhada nesse conjunto que além de cumprir seu papel te deixará elegante.",
-            "items": "",
+            "items": "Óculos Kaliyadi, blusa rosa, sobretudo com babado, saia longa rosa, sapatilhas e bolsa de mão.",
             "price": "Por: 399,90"
         },
         {
@@ -31,8 +31,8 @@
             "image": "/assets/Casual.svg",
             "title": "Casual",
             "description": "Esse é o mais versátil, vá para onde for com estilo que sempre é atual.",
-            "items": "Óculos de Sol, blusa Calvin Klein, camiseta e calça jeans e o Tênis Vans.",
-            "price": "Por: 149,90"
+            "items": "Óculos de Sol, camisa Calvin Klein, camiseta e calça jeans e o Tênis Vans.",
+            "price": "Por: 323,90"
         },
         {
             "id": 2,
@@ -40,13 +40,13 @@
             "title": "Moleton",
             "description": "Quer sair combinando ou somente busca conforto? Com moleton não tem como errar.",
             "items": "",
-            "price": "Por: 169,90"
+            "price": "Por: 323,90"
         },
         {
             "id": 3,
             "image": "/assets/Primavera.svg",
             "title": "Primavera",
-            "description": "Em um clima agradável nada melhor do que sentir a paz de estar bem consigo mesma.",
+            "description": "Em um clima agradável nada melhor do que sentir a paz de estar bem consigo mesma. ",
             "items": "",
             "price": "Por: 254,90"
         },
@@ -55,7 +55,7 @@
             "image": "/assets/Coringa.svg",
             "title": "Coringa",
             "description": "Seus olhos brilharam? Sem medo de errar você sabe que esse terá um lugar especial no guarda-roupa.",
-            "items": "",
+            "items": "Óculos Ray Ban, Camiseta cinza, calça jeans, salto 8cm e bolsa Luiza Barcelos",
             "price": "Por: 751,80"
         }
     ]
