@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Major+Mono+Display&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Paprika&family=Playwrite+AU+SA:wght@100..400&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Major+Mono+Display&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Palanquin+Dark:wght@400;500;600;700&family=Paprika&family=Playwrite+AU+SA:wght@100..400&family=Poiret+One&display=swap');
+
+
 .selection-container {
     display: flex;
     width: 100%;
@@ -33,6 +37,13 @@
     gap: 30px;
 }
 
+.selection-content>h1 {
+    font-family: "Poiret One", serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .selection-info {
     display: flex;
     max-width: 861px;
@@ -48,6 +59,36 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+}
+
+.selection-info>span>p {
+    font-size: 18px;
+    font-family: "Palanquin Dark", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.selection-info>span>ul{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: #C877F2;
+    border-radius: 10px;
+    align-items: center;
+    padding: 15px 0px;
+    gap: 15px;
+}
+
+.selection-info>span>ul>li{
+    list-style: none;
+    display: flex;
+    width: 90%;
+    font-weight: bolder;
+    justify-content: space-between;
+}
+
+.selection-info>h5{
+    font-size: 26px;
 }
 
 .selection-actions {
@@ -67,6 +108,7 @@
     height: 42px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .selection-actions>a {
