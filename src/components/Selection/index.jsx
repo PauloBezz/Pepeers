@@ -4,7 +4,7 @@ import './styles.css'
 export default function Selection({ data }) {
     const { index } = useParams();
     const item = data?.[index]
-    const { id, image, title, description, items, price } = item;
+    const { id, image, title, description, items, priceItems, price } = item;
 
     return (
         <section key={id} className="selection-container">
@@ -17,8 +17,17 @@ export default function Selection({ data }) {
                 <div className="selection-info">
                     <span>
                         <p>{description}</p>
-                        <h3>{items}</h3>
+                        {items && (
+                            <ul>
+                                {items.split(",").map((item, index) => (
+                                    <li key={index}>{item.trim()}
+                                        <p>{priceItems.split(",")[index]?.trim()}</p>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
                     </span>
+
                     <h5>{price}</h5>
                 </div>
 
