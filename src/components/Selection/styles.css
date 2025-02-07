@@ -72,7 +72,7 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-    background-color: #C877F2;
+    background-color: #FFE0E0;
     border-radius: 10px;
     align-items: center;
     padding: 15px 0px;
@@ -83,12 +83,22 @@
     list-style: none;
     display: flex;
     width: 90%;
-    font-weight: bolder;
+    align-items: center;
     justify-content: space-between;
+    font-family: "Palanquin Dark", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.selection-info>span>ul>li>p{
+    font-size: 20px;
+    font-family: "Poiret One", serif;
 }
 
 .selection-info>h5{
     font-size: 26px;
+    font-weight: 400;
 }
 
 .selection-actions {
@@ -103,11 +113,13 @@
 
 .selection-actions>p {
     display: flex;
+    gap: 10px;
     width: 60%;
     max-width: 400px;
     height: 42px;
     align-items: center;
     justify-content: center;
+    text-align: center;
     cursor: pointer;
 }
 

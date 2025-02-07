@@ -1,5 +1,7 @@
-import { Link, useParams } from "react-router-dom"
 import './styles.css'
+import { Link, useParams } from "react-router-dom"
+import money from "./assets/money.svg"
+import Cash from './assets/Cash';
 
 export default function Selection({ data }) {
     const { index } = useParams();
@@ -27,12 +29,11 @@ export default function Selection({ data }) {
                             </ul>
                         )}
                     </span>
-
                     <h5>{price}</h5>
                 </div>
 
                 <div className="selection-actions">
-                    <p>Escolher forma de pagamento</p>
+                    <p><Cash /> Escolher forma de pagamento</p>
                     <Link to={''}>Adicionar o pagamento</Link>
                 </div>
             </aside>

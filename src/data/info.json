@@ -22,7 +22,7 @@
             "id": 0,
             "image": "/assets/Outono.svg",
             "title": "Outono Rosa",
-            "description": "Passar frio ninguém merece, então dá uma olhada nesse conjunto rosa para te preparar para a estação do Outono. Além de cumprir seu papel te deixará elegante e todo mundo vai preguntar aonde você comprou, não esqueça de indicar a Pepeers ;).",
+            "description": "Passar frio ninguém merece, então dá uma olhada nesse conjunto de Outono. Além de cumprir seu papel te deixará elegante e todo mundo vai preguntar aonde você comprou, só não esquece de indicar a Pepeers ;).",
             "items": "Óculos Kaliyadi, Blusa rosa, Sobretudo com babado, Saia longa rosa, Sapatilhas, Bolsa de mão.",
             "priceItems": "R$49.90, R$59.90, R$100.90, R$35.50, R$153.70, R$199.90",
             "price": "Por: R$599.80"
@@ -32,7 +32,7 @@
             "image": "/assets/Casual.svg",
             "title": "Casual",
             "description": "Esse é o mais versátil, vá para onde for com estilo que sempre é atual.",
-            "items": "Óculos de Sol, Camisa Calvin Klein, Camiseta jeans, Calça jeans, Tênis Vans.",
+            "items": "Óculos de Sol, Camisa Calvin Klein, Camiseta jeans, Calça jeans, Tênis Vans",
             "priceItems": "R$25.90, R$74.90, R$30.90, R$66.70, R$101.50",
             "price": "Por: R$274.15"
         },
@@ -50,7 +50,7 @@
             "image": "/assets/Primavera.svg",
             "title": "Primavera",
             "description": "Em um clima agradável nada melhor do que sentir a paz de estar bem consigo mesma. ",
-            "items": "ÓCculos de sol, Blusa lã verde, Camiseta de lã amarela, Saia de lã amarela, Salto de 10cm, Bolsa arco-íris ",
+            "items": "Óculos de sol, Blusa lã verde, Camiseta de lã amarela, Saia de lã amarela, Salto de 10cm, Bolsa arco-íris ",
             "priceItems": "R$39.90, R$49.90, R$78.50, R$69.99, R$79.90, R$249.90",
             "price": "Por: R$568.09"
         },
