@@ -11,7 +11,6 @@
     background-color: #C877F2;
     border-radius: 6px;
     gap: 15px;
-
 }
 
 .container-config>a{
@@ -19,6 +18,11 @@
     text-decoration: none;
     font-size: 20px;
     color: #FFF;
+    width: 90px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .container-config>a:hover{
     color: black;

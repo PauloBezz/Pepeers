@@ -1,6 +1,5 @@
 import './styles.css'
 import { Link, useParams } from "react-router-dom"
-import money from "./assets/money.svg"
 import Cash from './assets/Cash';
 
 export default function Selection({ data }) {
@@ -34,7 +33,7 @@ export default function Selection({ data }) {
 
                 <div className="selection-actions">
                     <p><Cash /> Escolher forma de pagamento</p>
-                    <Link to={''}>Adicionar o pagamento</Link>
+                    <Link to={''}>Adicionar ao carrinho</Link>
                 </div>
             </aside>
         </section>
