@@ -63,5 +63,35 @@
             "priceItems": "R$59.90, R$39.90, R$75.00, R$59.90, R$419.90",
             "price": "Por: R$751.80"
         }
+    ],
+    "more": [
+        {
+            "id:": 0,
+            "image": "/assets/CjJeans",
+            "title": "Conjunto Jeans",
+            "itens": "Calça jeans, Bolsa peq. preta, Camisa branca, Sándalia de tecido",
+            "price": "R$ 199.90"
+        },
+        {
+            "id:": 1,
+            "image": "/assets/CjJunino",
+            "title": "Conjunto Junino",
+            "itens": "Suéter vermelho, Bota de couro, Calça jeans, Camisa xadrez",
+            "price": "R$ 249.90"
+        },
+        {
+            "id:": 2,
+            "image": "/assets/CjDark",
+            "title": "Conjunto Dark",
+            "itens": "Jeans preto, Bota preta, Suéter Salmão, Touca preta",
+            "price": "R$ 224.90"
+        },
+        {
+            "id:": 3,
+            "image": "/assets/CjLeve",
+            "title": "Conjunto Leve",
+            "itens": "Suéter verde, Jeans azul, Tênis casual",
+            "price": "R$ 149,80"
+        }
     ]
 }
