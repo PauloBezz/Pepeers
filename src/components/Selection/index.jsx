@@ -1,6 +1,8 @@
 import './styles.css'
 import { Link, useParams } from "react-router-dom"
+import { other } from '../../data/info.json'
 import Cash from './assets/Cash';
+import More from '../More';
 
 export default function Selection({ data }) {
     const { index } = useParams();
@@ -35,6 +37,7 @@ export default function Selection({ data }) {
                     <p><Cash /> Escolher forma de pagamento</p>
                     <Link to={''}>Adicionar ao carrinho</Link>
                 </div>
+            <More data={other.slice(0, 2)} />
             </aside>
         </section>
     )
