@@ -1,3 +1,16 @@
 .more-container{
     display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.more-info{
+    display: flex;
+    align-items: center;
+}
+
+.more-info > div> h1 {
+    display: flex;
+    margin-bottom: 16px;
 }
