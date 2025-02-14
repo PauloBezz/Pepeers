@@ -1,6 +1,5 @@
 import './styles.css'
 
-
 export default function More({ data }) {
 
     return (
@@ -15,6 +14,7 @@ export default function More({ data }) {
                                 <h5 key={index}>{more.trim()}</h5>
                             )))}
                         <p>{price}</p>
+                        <input type="checkbox" />
                     </div>
                 </div>
             ))}

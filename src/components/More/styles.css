@@ -3,14 +3,27 @@
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
+    background-color: aliceblue;
+    padding: 6px;
 }
 
 .more-info{
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .more-info > div> h1 {
     display: flex;
     margin-bottom: 16px;
+}
+
+.more-info> img{
+    border-radius: 10px ;
+    border: 1px solid red;
+}
+
+.more-info > div > input{
+    width: 20px;
+    height: 20px;
 }
