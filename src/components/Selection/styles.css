@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-    padding: 50px;
+    padding: 20px;
 }
 
 .selection-image {
@@ -68,7 +68,7 @@
     font-style: normal;
 }
 
-.selection-info>span>ul{
+.selection-info>span>ul {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -79,7 +79,7 @@
     gap: 15px;
 }
 
-.selection-info>span>ul>li{
+.selection-info>span>ul>li {
     list-style: none;
     display: flex;
     width: 90%;
@@ -91,12 +91,12 @@
 }
 
 
-.selection-info>span>ul>li>p{
+.selection-info>span>ul>li>p {
     font-size: 20px;
     font-family: "Poiret One", serif;
 }
 
-.selection-info>h5{
+.selection-info>h5 {
     font-size: 26px;
     font-weight: 400;
 }

@@ -1,29 +1,32 @@
-.more-container{
+.more-container {
     display: flex;
-    width: 100%;
+    width: 80%;
     align-items: center;
     justify-content: space-evenly;
-    background-color: aliceblue;
-    padding: 6px;
+    background-color: white;
+    padding: 6px 0px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.more-info{
+.more-info {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.more-info > div> h1 {
+.more-info>div>h1 {
     display: flex;
     margin-bottom: 16px;
 }
 
-.more-info> img{
-    border-radius: 10px ;
+.more-info>img {
+    border-radius: 10px;
     border: 1px solid red;
 }
 
-.more-info > div > input{
+.more-info>div>input {
     width: 20px;
     height: 20px;
 }
