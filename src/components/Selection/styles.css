@@ -5,16 +5,21 @@
 .selection-container {
     display: flex;
     width: 100%;
-    height: 92.2vh;
+    height: fit-content;
+    min-height: 92.5vh;
     background-color: #FFE0E0;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     justify-content: space-between;
-    padding: 20px;
+
+    padding: 20px 2%;
 }
 
 .selection-image {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .selection-image>img {
@@ -28,6 +33,13 @@
     box-shadow: 10px 5px #C877F2;
 }
 
+.selection-image>p{
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    width: 90%;
+}
+
 .selection-content {
     display: flex;
     width: 100%;
@@ -37,7 +49,18 @@
     gap: 30px;
 }
 
-.selection-content>h1 {
+.selection-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.selection-title>a {
+    display: flex;
+    align-self: self-end;
+}
+
+.selection-title>h1 {
     font-family: "Poiret One", serif;
     font-size: 40px;
     font-weight: 400;
@@ -46,6 +69,7 @@
 
 .selection-info {
     display: flex;
+    width: 100%;
     max-width: 861px;
     flex-direction: column;
     background-color: #FFFFFF;
@@ -55,9 +79,9 @@
 }
 
 .selection-info>span {
-    text-align: center;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    text-align: center;
     gap: 25px;
 }
 
@@ -76,6 +100,7 @@
     border-radius: 10px;
     align-items: center;
     padding: 15px 0px;
+    justify-content: space-between;
     gap: 15px;
 }
 
@@ -105,28 +130,35 @@
     display: flex;
     width: 85%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 }
 
-.selection-actions>p {
+.selection-actions>button {
     display: flex;
-    gap: 10px;
-    width: 60%;
-    max-width: 400px;
+    width: 40%;
+    height: 42px;
+    max-width: 360px;
     height: 42px;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    border: transparent;
+}
+
+.selection-actions>button:hover {
+    background-color: white;
 }
 
 .selection-actions>a {
-    width: 60%;
-    max-width: 400px;
-    height: 52px;
+    font-size: 18px;
+    width: 40%;
+    max-width: 360px;
+    height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,4 +166,13 @@
     background-color: #C877F2;
     border-radius: 10px;
     text-decoration: none;
+    gap: 10px;
 }
+
+.selection-actions>a:hover {
+    background-color: #C877F2;
+    color: black;
+    opacity: 0.5;
+}
+
+@media screen and (max-width:'') {}

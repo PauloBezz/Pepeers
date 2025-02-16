@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom"
 import { other } from '../../data/info.json'
 import Cash from './assets/Cash';
 import More from '../More';
+import Cancel from './assets/Cancel';
 
 export default function Selection({ data }) {
     const { index } = useParams();
@@ -13,13 +14,16 @@ export default function Selection({ data }) {
         <section key={id} className="selection-container">
             <div className="selection-image">
                 <img src={image} alt={`Conjunto ${title}`} />
+                <p>{description}</p>
             </div>
             <aside className="selection-content">
+                <div className='selection-title'>
+                    <h1>Modelo {title}</h1>
+                    <Link to={'/'}><Cancel /></Link>
+                </div>
 
-                <h1>Modelo {title}</h1>
                 <div className="selection-info">
                     <span>
-                        <p>{description}</p>
                         {items && (
                             <ul>
                                 {items.split(",").map((item, index) => (
@@ -34,10 +38,10 @@ export default function Selection({ data }) {
                 </div>
 
                 <div className="selection-actions">
-                    <p><Cash /> Escolher forma de pagamento</p>
-                    <Link to={''}>Adicionar ao carrinho</Link>
+                    <button>Adicionar ao carrinho</button>
+                    <Link to={'/cash'}><Cash />Comprar</Link>
                 </div>
-            <More data={other.slice(0, 2)} />
+                <More data={other.slice(0, 2)} />
             </aside>
         </section>
     )
