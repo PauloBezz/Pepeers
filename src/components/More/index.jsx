@@ -1,10 +1,11 @@
 import './styles.css'
 
 export default function More({ data }) {
-
+    
     return (
-        <div className='more-container' >
-            {data?.map(({ id, image, title, itens, price }) => (
+        <section className='more-container' >
+            {/* Chamada de 2 itens do array e em seguida mapeando os itens*/}
+            {data.slice(0, 2)?.map(({ id, image, title, itens, price }) => (
                 <div key={id} className='more-info'>
                     <img src={image} alt={`Conjunto ${title}`} />
                     <div>
@@ -18,6 +19,6 @@ export default function More({ data }) {
                     </div>
                 </div>
             ))}
-        </div>
+        </section>
     )
 }

@@ -1,6 +1,6 @@
 .more-container {
     display: flex;
-    width: 80%;
+    width: 90%;
     align-items: center;
     justify-content: space-evenly;
     background-color: white;
@@ -23,7 +23,6 @@
 
 .more-info>img {
     border-radius: 10px;
-    border: 1px solid red;
 }
 
 .more-info>div>input {
