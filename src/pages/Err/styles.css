@@ -1,0 +1,47 @@
+.err-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.err-container>img {
+    display: flex;
+    width: 300px;
+}
+
+.err-container>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.err-container>div>h1 {
+    font-size: 50px;
+    color: red;
+    font-weight: bolder;
+}
+
+.err-container>div>p {
+    font-size: 18px;
+}
+
+.err-container>a{
+    display: flex;
+    width: 200px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 22px;
+    color: white;
+}
+
+.err-container>a:hover{
+    background-color: red;
+}
