@@ -221,6 +221,14 @@
         box-shadow: 0px 10px #C877F2;
     }
 
+    .selection-image>div>h1 {
+        font-family: "Poiret One", serif;
+        font-size: 20px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+
     .selection-image>div>a {
         display: flex;
         align-self: end;
