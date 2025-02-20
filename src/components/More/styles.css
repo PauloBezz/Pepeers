@@ -18,6 +18,7 @@
 
 .more-info>div>h1 {
     display: flex;
+    font-size: 20px;
     margin-bottom: 16px;
 }
 
@@ -28,4 +29,36 @@
 .more-info>div>input {
     width: 20px;
     height: 20px;
+}
+
+@media screen and (max-width:770px) {
+    .more-container {
+        text-align: start;
+        gap: 10px;
+    }
+
+    .more-info {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        gap: 10px;
+    }
+
+    .more-info>div>h1 {
+        display: flex;
+        margin-bottom: 16px;
+    }
+
+    .more-info>img {
+        border-radius: 10px;
+    }
+
+    .more-info>div>input {
+        position: relative;
+        bottom: 10px;
+        width: 30px;
+        height: 30px;
+        left: 100px;
+    }
 }
