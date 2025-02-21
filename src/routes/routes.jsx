@@ -4,6 +4,7 @@ import SignUp from '../pages/Register'
 import { Home } from '../pages/Home/index'
 import { Product } from '../pages/Product'
 import Err from '../pages/Err'
+import { Cart } from '../components/Cart'
 
 export default function Router() {
     return (
@@ -13,6 +14,7 @@ export default function Router() {
                 <Route Component={Login} path="/login" />
                 <Route Component={SignUp} path="/signup" />
                 <Route Component={Product} path="/product/:index" />
+                <Route Component={Cart} path="/cart" />
                 <Route Component={Err} path='*' />
             </Routes>
         </BrowserRouter>
