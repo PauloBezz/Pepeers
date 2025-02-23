@@ -1,9 +1,9 @@
-// import "./styles.css"
+import "./styles.css"
 
 export const Cart = () => {
 
     return (
-        <section>
+        <section className="cart-container">
             <div>
                 <h1>Meus pedidos</h1>
                 <div></div>
