@@ -11,7 +11,7 @@ export default function Footer() {
                 <img src={logoSmall} alt="logo" className='footer-logoSmall' />
 
                 <div className='footer-links'>
-                    <Link>Contato</Link>
+                    <Link to={'/contact'}>Contato</Link>
                     <Link>Trabalhe conosco</Link>
                 </div>
             </div>

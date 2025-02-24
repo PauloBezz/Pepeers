@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
 
-.container {
+.container-header {
     display: flex;
     width: 100%;
     height: 70px;
@@ -14,25 +14,25 @@
     display: none;
 }
 
-.icons {
+.header-icons {
     display: flex;
     width: 140px;
     justify-content: space-between;
 }
 
-.icons>img {
+.header-icons>img {
     width: 34px;
     height: 34px;
 }
 
-.icons>img:hover {
+.header-icons>img:hover {
     border: 1px solid aliceblue;
     border-radius: 10px;
     padding: 2px;
     cursor: pointer;
 }
 
-.icons>img:active {
+.header-icons>img:active {
     background-color: aliceblue;
 }
 
@@ -51,7 +51,7 @@
         display: none;
     }
 
-    .icons :last-child {
+    .header-icons:last-child {
         display: none;
     }
 
@@ -99,7 +99,7 @@
 /* TABLET and DESKTOP */
 @media screen and (min-width: 651px) {
 
-    .icons {
+    .header-icons {
         width: 85px;
     }
 
