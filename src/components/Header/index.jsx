@@ -18,7 +18,7 @@ export default function Header() {
     const handleOpen = () => {
         setOpen(!open);
     }
-    
+
     const handleSearch = () => {
         setFind(!find);
     }
@@ -29,14 +29,14 @@ export default function Header() {
 
     return (
         <>
-            <header className='container'>
+            <header className='container-header'>
                 <a href="/" className='logoSmall'>
                     <img src={logoSmall} alt="Logo" title='Logo' />
                 </a>
                 <a href="/">
                     <img src={logo} alt="Logo" title='Logo' className='logo' />
                 </a>
-                <div className='icons'>
+                <div className='header-icons'>
                     <img src={search} alt="Search" className='icon-search' title='Search' onClick={handleSearch} />
                     <img src={cart} alt="Cart" title='Cart' />
                     <img src={menu} alt="Menu" className='icon-menu' title='Menu' onClick={handleOpen} />
@@ -58,7 +58,6 @@ export default function Header() {
                     <a className='menu-link' href="#">Promoções</a>
                     <a className='menu-link' href="#">Lançamentos</a>
                     <a className='menu-link' href="#">Vestidos</a>
-                    <a className='menu-link' href="#">Infantil</a>
                     <a className='menu-link' href="#">Acessórios</a>
                 </nav>
             )}
