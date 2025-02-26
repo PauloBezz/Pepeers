@@ -1,21 +1,31 @@
 import './styles.css'
 import Next from './assets/arrowNext.svg'
 import Prev from './assets/arrowPrev.svg'
+import { useState } from 'react'
 
-export default function More({ data }) {
-    
+export default function More({ data = [] }) {
+    const [more, setMore] = useState(0)
 
-    // const handleNext = () =>{
-        
-    // }
+    const handleNext = () => {
+        if (more + 2 < data.length) {
+            setMore(more + 2)
+        }
+    }
+
+    const handlePrev = () => {
+        if (more > 0) {
+            setMore(more - 2)
+        }
+    }
 
     return (
         <section className='more-container' >
-            <button className='more-btn' onClick={""}>
-            <img src={Prev}  alt="Seta esquerda"/>
+            <button className='more-btn' onClick={handlePrev} disabled={more === 0}>
+                <img src={Prev} alt="Seta esquerda" />
             </button>
             {/* Chamada de 2 itens do array e em seguida mapeando os itens*/}
-            {data.slice(0,2).map(({ id, image, title, itens, price }) => (
+            {data.slice(more, more + 2).map(({ id, image, title, itens, price }) => (
+
                 <div key={id} className='more-info'>
                     <img src={image} alt={`Imagem do conjunto ${title}`} />
                     <div>
@@ -29,8 +39,8 @@ export default function More({ data }) {
                     </div>
                 </div>
             ))}
-            <button className='more-btn'>
-            <img src={Next} alt="Seta direita" />
+            <button className='more-btn' onClick={handleNext} disabled={more + 2 >= data.length}>
+                <img src={Next} alt="Seta direita" />
             </button>
         </section>
     )
