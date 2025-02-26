@@ -93,5 +93,13 @@
             "itens": "Suéter verde, Jeans azul, Tênis casual",
             "price": "R$ 149,80"
         }
+    ],
+    "sectors": [
+        {
+            "promotions": [],
+            "releases": [],
+            "dresses": [],
+            "accessories": []
+        }
     ]
 }
