@@ -8,7 +8,7 @@ export const Product = () => {
         <>
             <Header />
             <Selection data={clothing} />
-            <Cart/>
+            {/* <Cart/> */}
         </>
     )
 }
