@@ -10,7 +10,7 @@
     padding: 15px 26px 0px 26px;
 }
 
-.logoSmall{
+.logoSmall {
     display: none;
 }
 
@@ -43,15 +43,15 @@
 /*  MOBILE  */
 @media screen and (max-width: 650px) {
 
-    .logoSmall{
+    .logoSmall {
         display: flex;
     }
 
-    .logo{
+    .logo {
         display: none;
     }
 
-    .header-icons:last-child {
+    .header-icons>img:last-child {
         display: none;
     }
 
@@ -76,7 +76,7 @@
         background-color: #FEABFF;
         z-index: 10;
     }
-    
+
     .menuOpen>a {
         font-family: 'Paprika', Arial, Helvetica, sans-serif;
         font-size: 22px;
@@ -90,8 +90,8 @@
         border-bottom: 1px solid #E18484;
     }
 
-    .menuOpen>a:active{
-        color:black;
+    .menuOpen>a:active {
+        color: black;
     }
 
 }
