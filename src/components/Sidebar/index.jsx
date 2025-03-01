@@ -1,15 +1,15 @@
 import './styles.css'
 import { Search } from '../Search'
+import { Link } from 'react-router-dom'
 
 export default function Sidebar() {
-
     return (
         <main className='sidebar-container'>
             <nav className='sidebar-content'>
-                <a className='sidebar-link' href="#">Promoções</a>
-                <a className='sidebar-link' href="#">Lançamentos</a>
-                <a className='sidebar-link' href="#">Vestidos</a>
-                <a className='sidebar-link' href="#">Acessórios</a>
+                <Link className='sidebar-link' href={`/sector`}>Promoções</Link>
+                <Link className='sidebar-link' href={`/sector`}>Lançamentos</Link>
+                <Link className='sidebar-link' href={`/sector`}>Vestidos</Link>
+                <Link className='sidebar-link' href={`/sector`}>Acessórios</Link>
                 <Search />
             </nav>
         </main>
