@@ -18,7 +18,7 @@ export default function Router() {
                 <Route Component={Product} path="/product/:index" />
                 <Route Component={Cart} path="/cart" />
                 <Route Component={Contact} path="/contact" />
-                <Route path="/sector/:category" element={<Sectors />} />
+                <Route Component={Sectors} path="/sector/:category"/>
                 <Route Component={Err} path="*" />
             </Routes>
         </BrowserRouter>
