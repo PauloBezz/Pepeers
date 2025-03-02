@@ -1,10 +1,9 @@
 import './styles.css'
 import { Search } from '../Search'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-export default function Sidebar({ data = [] }) {
-    const id = useParams();
-    const ind = data.find((item) => item.id === Number(id));
+export default function Sidebar() {
+
 
     return (
         <main className='sidebar-container'>
