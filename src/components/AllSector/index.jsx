@@ -1,14 +1,16 @@
 
+
 export function AllSector({ data = [] }) {
+
     return (
         <main className="sector-container">
-            {data.map((item) => (
-                <article key={item.id} className="sector-item">
+            {data.map((item, index) => (
+                <article key={index} className="sector-item">
                     <div className="sector-content">
-                        <img src={item.image} alt={item.title} />
+                        <img src={item.image} alt={`Imagem de ${item.title}`} />
                     </div>
                     <span>
-                        <h1>{item.title}</h1>
+                        <h2>{item.title}</h2>
                         <p>{item.price}</p>
                     </span>
                 </article>
