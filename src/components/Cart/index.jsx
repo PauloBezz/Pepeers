@@ -1,14 +1,25 @@
 import "./styles.css"
 
-export const Cart = () => {
+export const Cart = ({ data = [] }) => {
+
+    const cartItems = data.cart || []
 
     return (
         <section className="cart-container">
-            <div>
-                <h1>Meus pedidos</h1>
-                <div></div>
-                <button>Finalizar Compra</button>
-            </div>
+            <h1>Meus pedidos</h1>
+            {cartItems.length === 0 ? (
+                <p>Seu carrinho está vazio</p>
+            ) : (
+                <div>
+                    {cartItems.map((item, index) => (
+                        <div key={index}>
+                            <p>{item}</p>
+                        </div>
+
+                    ))}
+                </div>
+            )}
+            <button>Finalizar Compra</button>
         </section>
     )
 }
