@@ -8,11 +8,13 @@ import config from './assets/config.svg'
 import { Search } from '../Search/index'
 import { useState } from 'react'
 import { Config } from '../Config'
+import { Cart } from '../Cart'
 
 export default function Header() {
     const [open, setOpen] = useState(false)
     const [find, setFind] = useState(false)
     const [conf, setConf] = useState(false)
+    const [shopping, setShopping] = useState(false)
 
 
     const handleOpen = () => {
@@ -27,6 +29,10 @@ export default function Header() {
         setConf(!conf);
     }
 
+    const handleCart = () => {
+        setShopping(!shopping);
+    }
+
     return (
         <>
             <header className='container-header'>
@@ -38,9 +44,14 @@ export default function Header() {
                 </a>
                 <div className='header-icons'>
                     <img src={search} alt="Search" className='icon-search' title='Search' onClick={handleSearch} />
-                    <img src={cart} alt="Cart" title='Cart' />
-                    <img src={menu} alt="Menu" className='icon-menu' title='Menu' onClick={handleOpen} />
 
+
+                    <button onClick={handleCart}>
+                        <img src={cart} alt="Cart" title='Cart' />
+                    </button>
+                    {shopping && <Cart data={cart} />}
+
+                    <img src={menu} alt="Menu" className='icon-menu' title='Menu' onClick={handleOpen} />
                     <img src={config} alt="Options" title='Options' onClick={handleConfig} />
                 </div>
 
