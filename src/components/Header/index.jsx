@@ -44,12 +44,12 @@ export default function Header() {
                 </a>
                 <div className='header-icons'>
                     <img src={search} alt="Search" className='icon-search' title='Search' onClick={handleSearch} />
-                    
-                    
+
+
                     <button onClick={handleCart}>
                         <img src={cart} alt="Cart" title='Cart' />
                     </button>
-                    {!shopping && <Cart />}
+                    {shopping && <Cart data={cart} />}
 
                     <img src={menu} alt="Menu" className='icon-menu' title='Menu' onClick={handleOpen} />
                     <img src={config} alt="Options" title='Options' onClick={handleConfig} />
