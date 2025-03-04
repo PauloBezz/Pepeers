@@ -54,16 +54,16 @@ export default function Main() {
 
             <figure className='main-carrossel'>
                 <article className='first'>
-                    <Card src={outono} alt={"Modelo Outono"} title={'Outono'} category={'Outono Pink'} onClick={() => handleSelection(0)} />
+                    <Card src={outono} alt={"Modelo Outono"} title={'Outono'} category={'Outono'} onClick={() => handleSelection(0)} />
                     <Card src={casual} alt={"Modelo Casual"} title={'Casual'} category={'Casual'} onClick={() => handleSelection(1)} />
                 </article>
                 <article className='second'>
                     <Card src={moleton} alt={"Modelo Moleton"} title={'Moleton'} category={'Moleton'} onClick={() => handleSelection(2)} />
-                    <Card src={primavera} alt={"Modelo Primavera"} title={'Primavera'} category={'Primavera'} onClick={() => handleSelection(3)} />
+                    <Card src={primavera} alt={"Modelo dia-a-dia"} title={'Dia-a-dia'} category={'Dia-a-dia'} onClick={() => handleSelection(3)} />
                 </article>
             </figure>
 
-            <button className='main-button' onClick={() => handleSelection(4)}>Coringa?<Arrow /></button>
+            <button className='main-button' onClick={() => handleSelection(4)}>Especial<Arrow /></button>
             <div className='main-notice'>
                 <p>{`Frete grátis até ${day}`}</p>
             </div>
