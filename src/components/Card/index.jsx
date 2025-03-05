@@ -1,13 +1,14 @@
+import './styles.css'
 
+export default function Card({ image, title, price }) {
 
-export default function Card() {
     return (
-        <article>
+        <button className='card-container'>
+            <img src={image} alt={`Imagem de ${title}`} />
             <div>
-                <img src={image} alt={`Imagem de ${title}`} />
+                <h2>{title}</h2>
+                <p>{price}</p>
             </div>
-            <h2>{title}</h2>
-            <p>{price}</p>
-        </article>
+        </button>
     )
 }
