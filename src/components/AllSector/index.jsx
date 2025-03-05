@@ -1,21 +1,26 @@
+import './styles.css'
+import Card from "../Card";
 
 
 export function AllSector({ data = [] }) {
 
     return (
-        <main className="sector-container">
-            {data.map((item, index) => (
-                <article key={index} className="sector-item">
-                    <div className="sector-content">
-                        <img src={item.image} alt={`Imagem de ${item.title}`} />
-                    </div>
-                    <span>
-                        <h2>{item.title}</h2>
-                        <p>{item.price}</p>
-                    </span>
-                </article>
-            )
+        <main className="allsector-container">
+            {data.length === 0 && (
+                <div className='allsector-null'>
+                    <p>Nenhum conjunto foi encontrado</p>
+                </div>
             )}
+
+            {data.map((item, index) => (
+                <Card
+                    key={index}
+                    image={item.image}
+                    title={item.title}
+                    price={item.price}
+                />
+            ))}
+
         </main>
     )
 }
