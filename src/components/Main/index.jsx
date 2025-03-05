@@ -4,7 +4,7 @@ import casual from './assets/Casual.svg'
 import moleton from './assets/Moleton.svg'
 import primavera from './assets/Primavera.svg'
 import Arrow from './assets/Arrow'
-import { Card } from '../Card'
+import { Category } from '../Category'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
@@ -54,12 +54,12 @@ export default function Main() {
 
             <figure className='main-carrossel'>
                 <article className='first'>
-                    <Card src={outono} alt={"Modelo Outono"} title={'Outono'} category={'Outono'} onClick={() => handleSelection(0)} />
-                    <Card src={casual} alt={"Modelo Casual"} title={'Casual'} category={'Casual'} onClick={() => handleSelection(1)} />
+                    <Category src={outono} alt={"Modelo Outono"} title={'Outono'} category={'Outono'} onClick={() => handleSelection(0)} />
+                    <Category src={casual} alt={"Modelo Casual"} title={'Casual'} category={'Casual'} onClick={() => handleSelection(1)} />
                 </article>
                 <article className='second'>
-                    <Card src={moleton} alt={"Modelo Moleton"} title={'Moleton'} category={'Moleton'} onClick={() => handleSelection(2)} />
-                    <Card src={primavera} alt={"Modelo dia-a-dia"} title={'Dia-a-dia'} category={'Dia-a-dia'} onClick={() => handleSelection(3)} />
+                    <Category src={moleton} alt={"Modelo Moleton"} title={'Moleton'} category={'Moleton'} onClick={() => handleSelection(2)} />
+                    <Category src={primavera} alt={"Modelo dia-a-dia"} title={'Dia-a-dia'} category={'Dia-a-dia'} onClick={() => handleSelection(3)} />
                 </article>
             </figure>
 
