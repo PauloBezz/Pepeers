@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { AllSector } from "../../components/AllSector";
+import Footer from "../../components/Footer/index"
 import Header from "../../components/Header";
 import Sidebar from "../../components/Sidebar";
 import data from '../../data/info.json';
@@ -26,6 +27,7 @@ export default function Sectors() {
             <Header />
             <Sidebar data={filterCategory} />
             <AllSector data={filterCategory} />
+            <Footer />
         </>
     );
 }

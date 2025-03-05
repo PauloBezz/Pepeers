@@ -1,0 +1,26 @@
+.allsector-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.allsector-null{
+    position: absolute;
+}
+
+@media screen and (max-width: 1000px) {
+    .allsector-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .allsector-container {
+        grid-template-columns: 1fr;
+    }
+}

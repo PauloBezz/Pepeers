@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Major+Mono+Display&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Palanquin+Dark:wght@400;500;600;700&family=Paprika&family=Playwrite+AU+SA:wght@100..400&family=Poiret+One&display=swap');
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: fit-content;
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.card-container>img {
+    width: 260px;
+    border-radius: 10px;
+}
+
+.card-container>div {
+    display: flex;
+    margin-top: 5px;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.card-container>div>h2 {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    text-align: start;
+}
+
+.card-container>div>p {
+    font-family: "Poiret One", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    font-style: normal;
+    display: flex;
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .card-container>img {
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    .card-container>div {
+        margin-top: 10px;
+    }
+
+    .card-container>div>h2 {
+        font-weight: 600;
+    }
+
+    .card-container>div>p {
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
