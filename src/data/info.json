@@ -95,20 +95,8 @@
         }
     ],
     "sectors": {
-        "promotions": [
-            {
-                "title": "Promoções",
-                "image": "/assets/Dark.svg",
-                "price": "R$100,00"
-            }
-        ],
-        "releases": [
-            {
-                "title": "Lançamentos",
-                "image": "/assets/Coringa.svg",
-                "price": "R$200,00"
-            }
-        ],
+        "promotions": [],
+        "releases": [],
         "dresses": [
             {
                 "image": "/assets/Dresses_red.svg",
@@ -131,7 +119,7 @@
                 "price": "R$409,90"
             },
             {
-                "image": "/assets/Dresses_yelpurple.svg",
+                "image": "/assets/Dresses_yellow_purple.svg",
                 "title": "Yellow and Purple Long",
                 "price": "R$198,90"
             },
@@ -139,18 +127,59 @@
                 "image": "/assets/Dresses_gray.svg",
                 "title": "Gray Long",
                 "price": "R$189,90"
-            }
-
-        ],
-        "accessories": [
+            },
             {
-                "title": "Acessórios",
-                "image": "/assets/Primavera.svg",
-                "price": "R$50,00"
+                "image": "/assets/Dresses_white.svg",
+                "title": "Pointed  Long",
+                "price": "R$229,90"
+            },
+            {
+                "image": "/assets/Dresses_pink.svg",
+                "title": "Style Pink",
+                "price": "R$149,90"
+            },
+            {
+                "image": "/assets/Dresses_red_silver.svg",
+                "title": "Red and Silver Long ",
+                "price": "R$389,90"
+            },
+            {
+                "image": "/assets/Dresses_white_blue.svg",
+                "title": "White and Blue",
+                "price": "R$499,90"
+            },
+            {
+                "image": "/assets/Dresses_black.svg",
+                "title": "Black  + Leather",
+                "price": "R$519,90"
+            },
+            {
+                "image": "/assets/Dresses_gray.svg",
+                "title": "Green Summer",
+                "price": "R$429,19"
+            },
+            {
+                "image": "/assets/Dresses_black_simple.svg",
+                "title": "Pure Dark",
+                "price": "R$259,90"
+            },
+            {
+                "image": "/assets/Dresses_white_blue.svg",
+                "title": "Completely Beige",
+                "price": "R$619,90"
+            },
+            {
+                "image": "/assets/Dresses_black.svg",
+                "title": "Wine and Beige",
+                "price": "R$309,90"
+            },
+            {
+                "image": "/assets/Dresses_yellow.svg",
+                "title": "Pure Yellow",
+                "price": "R$239,90"
             }
-        ]
+        ],
+        "accessories": []
     },
-    "cart": {
-        
-    }
+    "cart": {}
 }
