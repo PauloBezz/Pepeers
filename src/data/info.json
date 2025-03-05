@@ -111,10 +111,36 @@
         ],
         "dresses": [
             {
-                "title": "Vestidos",
-                "image": "/assets/Casual.svg",
-                "price": "R$150,00"
+                "image": "/assets/Dresses_red.svg",
+                "title": "Xadrez Vermelho",
+                "price": "R$349,90"
+            },
+            {
+                "image": "/assets/Dresses_gold.svg",
+                "title": "Gold Long",
+                "price": "R$396,99"
+            },
+            {
+                "image": "/assets/Dresses_purple.svg",
+                "title": "Purple Long",
+                "price": "R$219,90"
+            },
+            {
+                "image": "/assets/Dresses_red_chess.svg",
+                "title": "Black + heart",
+                "price": "R$409,90"
+            },
+            {
+                "image": "/assets/Dresses_yelpurple.svg",
+                "title": "Yellow and Purple Long",
+                "price": "R$198,90"
+            },
+            {
+                "image": "/assets/Dresses_gray.svg",
+                "title": "Gray Long",
+                "price": "R$189,90"
             }
+
         ],
         "accessories": [
             {
