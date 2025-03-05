@@ -1,10 +1,13 @@
 
 
-export function Card({ onClick, src, alt, title, category }) {
+export default function Card() {
     return (
-        <div onClick={onClick} >
-            <img src={src} alt={alt} title={title} />
-            <p className='category'>{category}</p>
-        </div>
+        <article>
+            <div>
+                <img src={image} alt={`Imagem de ${title}`} />
+            </div>
+            <h2>{title}</h2>
+            <p>{price}</p>
+        </article>
     )
 }
