@@ -1,14 +1,15 @@
 .footer-container {
-display: flex;
+    display: flex;
     width: 100%;
     height: fit-content;
     background-color: pink;
     align-items: center;
-    
+
     flex-wrap: wrap;
     margin-bottom: 20px;
     justify-content: space-evenly;
-    padding: 15px 0px;
+    padding: 20px 0px;
+    gap: 12px;
 }
 
 .footer-logo {
@@ -24,10 +25,9 @@ display: flex;
     flex-wrap: wrap;
     padding: 10px 0px 10px 0px;
     text-align: center;
-    gap: 20px;
 }
 
-.footer-container>p{
+.footer-container>p {
     font-size: 12px;
 }
 
@@ -37,7 +37,9 @@ display: flex;
 
 .footer-links {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
     font-size: 16px;
 }
 
@@ -45,6 +47,7 @@ display: flex;
     text-decoration: none;
     color: black;
     border: 2px solid transparent;
+    font-weight: bold;
 }
 
 .footer-links>a:hover {
@@ -57,8 +60,8 @@ display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
     }
-    
-    .footer-logo{
+
+    .footer-logo {
         display: none;
     }
 
