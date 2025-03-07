@@ -6,16 +6,14 @@ import { Link } from 'react-router-dom'
 export default function Footer() {
     return (
         <footer className='footer-container'>
-            <div className='footer-content'>
-                <img src={logo} alt="logo" className='footer-logo' />
-                <img src={logoSmall} alt="logo" className='footer-logoSmall' />
+            <img src={logo} alt="logo" className='footer-logo' />
+            <img src={logoSmall} alt="logo" className='footer-logoSmall' />
 
-                <div className='footer-links'>
-                    <Link to={'/contact'}>Contato</Link>
-                    <Link>Trabalhe conosco</Link>
-                </div>
+            <div className='footer-links'>
+                <Link to={'/contact'}>Contato</Link>
+                <Link>Trabalhe conosco</Link>
             </div>
-            <p>Copyright@ 2023-2025 Pepeeps. Todos direitos reservados ao uso.</p>
+            <p>Copyright@ 2023-2025 Pepeers. Todos direitos reservados ao uso.</p>
         </footer>
     )
 }
