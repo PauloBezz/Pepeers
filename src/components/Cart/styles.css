@@ -1,16 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Major+Mono+Display&family=MonteCarlo&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Palanquin+Dark:wght@400;500;600;700&family=Paprika&family=Playwrite+AU+SA:wght@100..400&family=Poiret+One&display=swap');
+
+
 .cart-container {
-    width: 800px;
-    height: 150px;
-    padding: 10px;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 80px;
-    right: 100px;
+
+    width: 100%;
+    max-width: 620px;
+    height: 150px;
+    border-radius: 6px;
+    padding: 10px;
+    top: 72px;
+    right: 2px;
+
+    align-items: center;
     background-color: white;
+    border: 1px solid #FF00E5;
+    justify-content: space-between;
+    text-align: start;
+
 }
+
+/* Título */
+.cart-container>h1 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+
+    align-self: flex-end;
+    font-family: "MonteCarlo", cursive;
+    font-style: normal;
+}
+
 
 .cart-container>div {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
+}
+
+.cart-container>a {
+    display: flex;
+    align-self: flex-end;
+    width: 25%;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid pink;
+    background-color: #FFF;
+
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cart-container>a:hover {
+    background-color: pink;
+    color: white;
+    font-weight: 600;
+    border-color: transparent;
 }

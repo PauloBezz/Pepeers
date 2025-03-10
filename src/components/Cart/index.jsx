@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./styles.css"
 
 export const Cart = ({ data = [] }) => {
@@ -19,7 +20,7 @@ export const Cart = ({ data = [] }) => {
                     ))}
                 </div>
             )}
-            <button>Finalizar Compra</button>
+            <Link to={"/"}>Comprar</Link>
         </section>
     )
 }
