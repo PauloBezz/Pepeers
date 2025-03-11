@@ -96,7 +96,23 @@
     ],
     "sectors": {
         "promotions": [],
-        "releases": [],
+        "releases": [
+            {
+                "image": "/assets/Release_brown.svg",
+                "title": "Brown Casual",
+                "price": "R$289,90"
+            },
+            {
+                "image": "/assets/Release_walk.svg",
+                "title": "Good Walk",
+                "price": "R$186,99"
+            },
+            {
+                "image": "/assets/Release_gold_black.svg",
+                "title": "Gold Black",
+                "price": "R$249,90"
+            }
+        ],
         "dresses": [
             {
                 "image": "/assets/Dresses_red.svg",
@@ -154,7 +170,7 @@
                 "price": "R$519,90"
             },
             {
-                "image": "/assets/Dresses_gray.svg",
+                "image": "/assets/Dresses_green.svg",
                 "title": "Green Summer",
                 "price": "R$429,19"
             },
@@ -164,12 +180,12 @@
                 "price": "R$259,90"
             },
             {
-                "image": "/assets/Dresses_white_blue.svg",
+                "image": "/assets/Dresses_beige.svg",
                 "title": "Completely Beige",
                 "price": "R$619,90"
             },
             {
-                "image": "/assets/Dresses_black.svg",
+                "image": "/assets/Dresses_wine.svg",
                 "title": "Wine and Beige",
                 "price": "R$309,90"
             },
