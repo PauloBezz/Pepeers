@@ -13,6 +13,7 @@ A prototipagem deste projeto foi criada no início da aulas de Front-End no SENA
 
  # Expectativas
 - Página de pagamento
-- Carrinho
+- Lógica do Carrinho
 - Sidebar
 - Site de promoção
+- Criação de cupom
