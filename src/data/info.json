@@ -95,7 +95,63 @@
         }
     ],
     "sectors": {
-        "promotions": [],
+        "promotions": [
+            {
+                "image": "/assets/Promo_.svg",
+                "title": "Brown Casual",
+                "price": "R$"
+            },
+            {
+                "image": "/assets/Promo_.svg",
+                "title": "",
+                "price": "R$"
+            },
+            {
+                "image": "/assets/Promo_.svg",
+                "title": "",
+                "price": "R$"
+            },
+            {
+                "image": "/assets/Promo_.svg",
+                "title": "",
+                "price": "R$"
+            },
+            {
+                "image": "/assets/Promo_.svg",
+                "title": "",
+                "price": "R$"
+            },
+            {
+                "image": "/assets/Promo_.svg",
+                "title": "",
+                "price": "R$"
+            },
+            {
+                "image": "/assets/Promo_.svg",
+                "title": "",
+                "price": "R$"
+            },
+            {
+                "image": "/assets/Promo_.svg",
+                "title": "",
+                "price": "R$"
+            },
+            {
+                "image": "/assets/Promo_.svg",
+                "title": "",
+                "price": "R$"
+            },
+            {
+                "image": "/assets/Promo_.svg",
+                "title": "",
+                "price": "R$"
+            },
+            {
+                "image": "/assets/Promo_.svg",
+                "title": "",
+                "price": "R$"
+            }
+        ],
         "releases": [
             {
                 "image": "/assets/Release_brown.svg",
@@ -111,6 +167,56 @@
                 "image": "/assets/Release_gold_black.svg",
                 "title": "Gold Black",
                 "price": "R$249,90"
+            },
+            {
+                "image": "/assets/Release_gray_boots.svg",
+                "title": "Gray + boots",
+                "price": "R$302,10"
+            },
+            {
+                "image": "/assets/Release_all_jeans.svg",
+                "title": "All Jeans",
+                "price": "R$238,90"
+            },
+            {
+                "image": "/assets/Release_sueter_white.svg",
+                "title": "Sueter + Jeans",
+                "price": "R$169,90"
+            },
+            {
+                "image": "/assets/Release_coat_jeans.svg",
+                "title": "Coat + High-Heeled",
+                "price": "R$319,90"
+            },
+            {
+                "image": "/assets/Release_coat_white.svg",
+                "title": "Jacket + Trainers",
+                "price": "R$289,90"
+            },
+            {
+                "image": "/assets/Release_chess_black.svg",
+                "title": "Chess Black",
+                "price": "R$259,90"
+            },
+            {
+                "image": "/assets/Release_jeans_blue.svg",
+                "title": "Jeans + Shirt Blue",
+                "price": "R$229,90"
+            },
+            {
+                "image": "/assets/Release_jeans_white.svg",
+                "title": "Jeans + T-Shirt White",
+                "price": "R$"
+            },
+            {
+                "image": "/assets/Release_.svg",
+                "title": "Jeans + T-Shirt Black",
+                "price": "R$219,19"
+            },
+            {
+                "image": "/assets/Release_.svg",
+                "title": "Jeans + Jersey Red",
+                "price": "R$299,90"
             }
         ],
         "dresses": [
